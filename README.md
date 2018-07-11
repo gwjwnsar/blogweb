@@ -11,6 +11,7 @@
 1. Django 2.0
 2. Python 3
 3. social-auth-app-django
+
 Installation instruction is there in respective official websites. social-auth-app-django can be install using pip install.
 
 ### Installation steps
