@@ -1,0 +1,16 @@
+{% extends "blog/base.html" %}
+ 
+{% block title %}Our Blog{% endblock %}
+ 
+{% block content %}
+    <h1 class="page-header">Welcome {{ user.username }}  <a href="create"><button type="text">Create Post</button></a>
+        <a href="logout"><button type="text">Logout</button></a></h1>
+    <h2 class="page-header">Recently published Posts</h2>
+    {% for post in posts %}
+        <h3><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h3>
+        <p class="small">Published {{ post.publish }} by {{ post.author }}</p>
+        <p>{{ post.content|truncatewords:25|linebreaks }}</p>
+    {% endfor %}
+    
+    {% include "blog/pagination.html" with page=posts %}
+{% endblock %}
