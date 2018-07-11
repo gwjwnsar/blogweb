@@ -18,8 +18,8 @@ Installation instruction is there in respective official websites. social-auth-a
 * Clone or download the git respository in your local drive.
 * In the setting.py change the google and facebook auth id and secret key.
 * Open the directory containing the project where there is manage.py file.
-* Execute the command python manage.py migrate
-* Execute the command python manage.py runserver. It will start local server at 8000 port number.
+* Execute the command ``python manage.py migrate``. It will create the required database.
+* Execute the command ``python manage.py runserver``. It will start local server at 8000 port number.
 * Then open the given url http://localhost:8000 in browser to play with it.
 
 ### Other options
